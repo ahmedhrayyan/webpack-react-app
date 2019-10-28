@@ -15,7 +15,7 @@ module.exports = merge(common, {
     port: 9000,
     historyApiFallback: true,
     host: "0.0.0.0",
-    clientLogLevel: "silent",
+    clientLogLevel: "debug",
     hot: true
   },
   module: {
@@ -46,6 +46,6 @@ module.exports = merge(common, {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin({ openAnalyzer: false, port: "8888" })
   ]
 });
