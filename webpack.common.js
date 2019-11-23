@@ -2,11 +2,12 @@ const path = require("path");
 // plugins
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: "./src/index.js"
+    main: "./src/index.tsx"
   },
   output: {
     filename: "[name].bundle.js",
@@ -18,7 +19,7 @@ module.exports = {
       "react-dom": "@hot-loader/react-dom"
     },
     modules: ["node_modules"],
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
     symlinks: false
   },
   optimization: {
@@ -37,7 +38,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         use: {
           loader: "babel-loader",
           options: {
@@ -50,6 +51,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
