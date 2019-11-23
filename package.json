@@ -30,6 +30,8 @@
     "@babel/preset-typescript": "^7.7.4",
     "@types/react": "^16.9.12",
     "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
     "autoprefixer": "^9.6.5",
     "babel-loader": "^8.0.6",
     "browserslist": "^4.7.1",
@@ -60,7 +62,7 @@
     "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "format": "prettier --write \"./**/*.js\" \"./**/*.jsx\" \"./**/*.json\" \"./**/*.css\" \"./**/*.scss\" \"./**/*.html\" \"./**/*.md\"",
+    "format": "prettier --write \"./**/*.js\" \"./**/*.jsx\" \"./**/*.ts\" \"./**/*.tsx\" \"./**/*.json\" \"./**/*.css\" \"./**/*.scss\" \"./**/*.html\" \"./**/*.md\"",
     "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.dev.js",
     "start": "webpack-dev-server --config webpack.dev.js"
