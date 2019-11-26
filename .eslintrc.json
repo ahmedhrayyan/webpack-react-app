@@ -19,7 +19,6 @@
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
-    "no-unused-vars": "warn",
     "no-console": "warn",
     "prefer-const": "warn",
     "react/prop-types": "warn",
