@@ -5,7 +5,4 @@ import App from "./App";
 // style
 import "./scss/main.scss";
 
-ReactDOM.render(
-    <App />,
-    document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
