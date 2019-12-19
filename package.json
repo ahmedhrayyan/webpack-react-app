@@ -62,7 +62,7 @@
     "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "format": "prettier --write \"./src/**/*.js\" \"./src/**/*.jsx\" \"./src/**/*.json\" \"./src/**/*.css\" \"./src/**/*.scss\" \"./src/**/*.html\"",
+    "format": "prettier --write \"./src/**/*.js\" \"./src/**/*.jsx\" \"./src/**/*.ts\" \"./src/**/*.tsx\" \"./src/**/*.json\" \"./src/**/*.css\" \"./src/**/*.scss\" \"./src/**/*.html\"",
     "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.dev.js",
     "start": "webpack-dev-server --config webpack.dev.js"
