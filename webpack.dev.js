@@ -3,8 +3,7 @@ const webpack = require("webpack");
 const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
 // plugins
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = merge(common, {
   mode: "development",
@@ -45,7 +44,7 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin({ openAnalyzer: false, port: "8888" })
+    new webpack.HotModuleReplacementPlugin()
+    // new BundleAnalyzerPlugin({ openAnalyzer: false, port: "8888" })
   ]
 });
