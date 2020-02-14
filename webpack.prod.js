@@ -11,7 +11,7 @@ module.exports = merge(common, {
   devtool: "source-map",
   output: {
     filename: "[name].[contenthash].js",
-    chunkFilename: "[id].[contenthash].js"
+    chunkFilename: "[name].[contenthash].js"
   },
   optimization: {
     minimize: true,
@@ -59,7 +59,7 @@ module.exports = merge(common, {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css",
-      chunkFilename: "[id].[hash].css"
+      chunkFilename: "[name].[hash].css"
     })
   ]
 });
