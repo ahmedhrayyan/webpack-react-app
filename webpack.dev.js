@@ -36,7 +36,7 @@ module.exports = merge(common, {
           loader: "file-loader",
           options: {
             name: "[path][name].[ext]",
-            outputPath: "images"
+            outputPath: "media"
           }
         },
         include: [path.resolve(__dirname, "src")]
