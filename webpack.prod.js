@@ -40,7 +40,7 @@ module.exports = merge(common, {
             loader: "file-loader",
             options: {
               name: "[hash].[ext]",
-              outputPath: "images"
+              outputPath: "media"
             }
           },
           {
