@@ -27,7 +27,7 @@
     "@babel/preset-react": "^7.6.3",
     "autoprefixer": "^9.6.5",
     "babel-loader": "^8.0.6",
-    "browserslist": "^4.7.1",
+    "browserslist": "^4.16.5",
     "cache-loader": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
